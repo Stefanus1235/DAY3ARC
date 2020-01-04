@@ -1,0 +1,84 @@
+
+body {
+    display: grid;
+    background-color : #606060 ;
+    justify-content: center;
+    align-items: center;
+    background-image: url("background.jpg");
+}
+
+.header {
+    color : goldenrod;
+    font-family: 'Courier New', Courier, monospace;
+    font-size : 48px;
+    justify-content: flex-start;
+
+}
+
+button {
+    border-radius: 15px;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid silver;
+    color: white;
+}
+
+.plusButton {
+    background-color: green;
+}
+
+.plusButton:hover {
+    background-color:  #35c839;
+}
+
+.deleteButton {
+    background-color: red;
+}
+
+.deleteButton:hover {
+    background-color: #D66969;
+}
+
+
+input {
+    border-radius: 15px;
+    width: 20rem;
+    border: 2px solid silver;
+    margin-bottom: 1rem ;
+    margin-right: 1rem;
+    padding: 10px;
+}
+
+
+input[type="date"] {
+    border-radius: 0px;
+    font-size: 1rem;
+    padding:5px;
+    background: none;
+    border: none;
+    width: 5.2rem;
+    color: goldenrod;
+}
+
+
+
+.separator  {
+    margin-bottom: 1rem;
+}
+
+.contents {
+  background-color: white;
+}
+
+.contents > li {
+  margin: 20px 0px 10px 0px;
+}
+
+.checkbox {
+  float: right;
+}
+
+.circle {
+  background-image: url(circle.png);
+  background-size: auto;
+}
