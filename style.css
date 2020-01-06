@@ -1,103 +1,69 @@
-body {
+html, body {
     display: grid;
+	background-image:url(background.jpg);
     background-color : #606060 ;
     justify-content: center;
     align-items: center;
-    background-image: url("background.jpg");
-}
-
+    }
 .header {
     color : goldenrod;
-    font-family: 'IMPACT', Courier, monospace;
+    font-family: 'Courier New', Courier, monospace;
     font-size : 48px;
     justify-content: flex-start;
-
 }
-
 .plusButton {
-    background-color: green;
+    background-color: #2055da;
     border-radius: 15px;
     padding: 10px;
     font-size: 16px;
     border: 2px solid silver;
     color: white;
 }
-
 .plusButton:hover {
-    background-color:  #35c839;
+    background-color:  #20daa5;
 }
-
 .plusButton:active{
-    background-color: rgb(23, 158, 23)
+    background-color: #20daa5
 }
-
 .deleteButton {
-    font-weight: bold;
     background-color: red;
     border-radius: 15px;
     padding: 10px;
     font-size: 16px;
     border: 2px solid silver;
     color: white;
-    margin-bottom: 1rem ;
 }
-
-.ticksymbol {
-    font-weight: bold;
-    background-color: yellowgreen;
-    border-radius: 15px;
-    padding: 10px;
-    font-size: 16px;
-    border: 2px solid silver;
-    color: white;
-    margin-bottom: 1rem ;
-    margin-right: 0.5rem;
-}
-
 .deleteButton:hover {
     background-color: #D66969;
 }
-
 .deleteButton:active {
     background-color: crimson;
 }
-
-#inputVal {
+input {
     border-radius: 15px;
-    width: 20rem;
+    width: 15em;
     border: 2px solid silver;
     margin-bottom: 1rem ;
     margin-right: 1rem;
     padding: 10px;
 }
-
 input[type="date"] {
-    font-weight: bold;
     border-radius: 0px;
     font-size: 1rem;
     padding:5px;
-    background: none;
+    background: white;
     border: none;
-    width: 5.2rem;
-    margin-bottom: 1rem ;
-    margin-right: 1rem;
-    color: goldenrod;
+    width: 10rem;
+    color: black;
 }
-
 .todotext {
     background: none;
     border: none;
-    color: cyan;
-    Font-family: 'Arial', Courier, monospace;
+    color: goldenrod;
     font-size: 1rem;
-    width: 20.2rem;
 }
-
-.strike {
-    text-decoration: line-through;
-    color: white;
-}
-
 .separator  {
     margin-bottom: 1rem;
 }
+   
+    
