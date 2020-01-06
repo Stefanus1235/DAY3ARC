@@ -7,3 +7,5 @@ STEFANUS JEREMY ASLAN
 CHRISTIAN GUNAWAN
 
 NATHANIEL JASON
+
+NOTE: "version lain/DAY3ARC-master" tidak digunakan. 
