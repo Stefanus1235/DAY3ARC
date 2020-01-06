@@ -4,38 +4,44 @@ function Add() {
     if (emptyornot == "") return 
 
     else {
-    let todotext = document.createElement("input") <!--> Bikin elemen input dengan value yang diisi pengguna. -->
-    todotext.setAttribute("type", "text")
+    let todotext = document.createElement("input")
+    todotext.setAttribute("type","text")
     todotext.setAttribute("value", inputVal.value)
     todotext.classList.add("todotext")
     todotext.disabled = true
+
+    let tick = document.createElement("button")
+    tick.classList.add("ticksymbol")
+    tick.innerHTML = "&#10003"
+    tick.addEventListener("click", function(){
+        todotext.classList.toggle("strike")
+    })
     
-    let tododel = document.createElement("button") <!-- Bikin elemen button Delete -->
+    let tododel = document.createElement("button")
     tododel.classList.add("deleteButton")
-    tododel.innerHTML = "Delete"
+    tododel.innerHTML = "&#10005"
     tododel.addEventListener("click", function(){
         container.removeChild(todonotes)
     })
     
-    let tanggal = document.createElement("input") <!-- Bikin elemen tanggal, dengan value sesuai input pengguna. -->
+    let tanggal = document.createElement("input")
     tanggal.setAttribute("type", "date")
     tanggal.setAttribute("value", Tggl.value)
     tanggal.classList.add("Date")
     tanggal.disabled = true
 
-    let container = document.querySelector(".todolist") <!-- set variabel container, yang merupakan div dengan kelas todolist -->
+    let container = document.querySelector(".todolist")
 
-    let todonotes = document.createElement("div") <!-- set elemen div yang akan ditambahkan kedalam container -->
+    let todonotes = document.createElement("div")
     
-    container.appendChild(todonotes) <!-- Tambahkan div todonotes ke container, dengan todonotes berisi input text, tanggal, dan button -->
+    container.appendChild(todonotes)
     todonotes.appendChild(todotext)
     todonotes.appendChild(tanggal)
+    todonotes.appendChild(tick)
     todonotes.appendChild(tododel)
-    Tggl.value = "" <!-- reset input Tanggal -->
-    inputVal.value = "" <!-- reset input text todo -->
+    Tggl.value = ""
+    inputVal.value = ""
     }
-
-
 }
 
 
